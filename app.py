@@ -1,12 +1,15 @@
+from src.parser import extract_text_from_pdf
 from src.matcher import calculate_match
 
 
-with open("data/resume.txt", "r") as file:
-    resume_text = file.read()
+resume_text = extract_text_from_pdf("data/resume.pdf")
 
 with open("data/job.txt", "r") as file:
     job_text = file.read()
 
 score = calculate_match(resume_text, job_text)
 
-print(f"Match Score: {score}%")
+print("\nExtracted Resume Text:\n")
+print(resume_text)
+
+print(f"\nMatch Score: {score}%")
