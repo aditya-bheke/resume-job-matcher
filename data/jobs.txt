@@ -1,0 +1,32 @@
+Machine Learning Engineer
+
+Python
+TensorFlow
+scikit-learn
+Deep Learning
+Neural Networks
+SQL
+Computer Vision
+
+===
+
+Backend Developer
+
+Python
+FastAPI
+REST APIs
+PostgreSQL
+Docker
+Git
+
+===
+
+Data Analyst
+
+SQL
+Python
+Pandas
+NumPy
+Data Visualization
+Statistics
+Excel
