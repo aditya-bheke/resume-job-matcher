@@ -1,1 +1,17 @@
-Looking for a software engineer skilled in Python, SQL, APIs, and machine learning.
+Machine Learning Engineer
+
+We are looking for a Machine Learning Engineer with strong knowledge of Python, scikit-learn, TensorFlow, Keras, Pandas, and NumPy.
+
+Requirements:
+- Experience with Machine Learning and Deep Learning projects
+- Knowledge of data preprocessing and feature engineering
+- Understanding of classification and regression models
+- Familiarity with Computer Vision and Neural Networks
+- Experience using Git and GitHub
+- Strong problem-solving and Data Structures skills
+- Experience building and deploying Streamlit applications
+
+Preferred:
+- Knowledge of transfer learning
+- Experience with CNN models
+- Familiarity with SQL and DBMS

@@ -1,11 +1,15 @@
 import nltk
 import string
+import spacy
 
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
 nltk.download("punkt")
 nltk.download("stopwords")
+nltk.download("punkt_tab")
+
+nlp = spacy.load("en_core_web_sm")
 
 
 def preprocess_text(text):
@@ -23,4 +27,13 @@ def preprocess_text(text):
 
     cleaned_text = " ".join(filtered_tokens)
 
-    return cleaned_text
+    doc = nlp(cleaned_text)
+
+    lemmatized_tokens = []
+
+    for token in doc:
+        lemmatized_tokens.append(token.lemma_)
+
+    final_text = " ".join(lemmatized_tokens)
+
+    return final_text
