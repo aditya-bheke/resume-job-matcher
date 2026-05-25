@@ -1,0 +1,20 @@
+python
+sql
+tensorflow
+keras
+pandas
+numpy
+scikit-learn
+machine learning
+deep learning
+computer vision
+streamlit
+git
+github
+docker
+fastapi
+postgresql
+cnn
+neural networks
+feature engineering
+data preprocessing
