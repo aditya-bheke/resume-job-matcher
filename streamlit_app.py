@@ -35,6 +35,12 @@ from src.vector_store import (
     retrieve_top_jobs
 )
 
+from src.database import (
+    save_resume_data,
+    fetch_all_resumes
+)
+
+
 
 # ---------------------------------------------------
 # PAGE TITLE
@@ -251,6 +257,10 @@ if uploaded_file:
         reverse=True
     )
 
+    top_result = results[0]
+
+    top_final_score = top_result[4]
+
     # ---------------------------------------------------
     # DISPLAY CANDIDATE PROFILE
     # ---------------------------------------------------
@@ -391,3 +401,34 @@ if uploaded_file:
     for item in feedback:
 
         st.write(f"- {item}")
+    
+    save_resume_data(
+
+    "Candidate",
+
+    predicted_profile,
+
+    resume_strength,
+
+    top_final_score
+    )
+
+    stored_resumes = fetch_all_resumes()
+
+    st.subheader("Stored Resume History")
+
+    history_df = pd.DataFrame(
+
+    stored_resumes,
+
+    columns=[
+        "ID",
+        "Candidate",
+        "Profile",
+        "Resume Strength",
+        "Final ATS Score"
+        ]
+    )
+
+    st.dataframe(history_df)
+    
